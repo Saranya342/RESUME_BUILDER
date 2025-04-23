@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume Builder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #2575fc;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #6a11cb;
+      margin-top: 30px;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      transition: 0.3s ease;
+      font-size: 1rem;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: #2575fc;
+      outline: none;
+      background: #f9f9ff;
+    }
+
+    .template-select {
+      margin-top: 10px;
+    }
+
+    .buttons {
+      margin-top: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .resume-preview {
+      border: 1px solid #e5e5e5;
+      padding: 20px;
+      border-radius: 12px;
+      background: #fefefe;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .feedback-section textarea {
+      height: 90px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 Resume Builder</h1>
+
+    <!-- Input Section -->
+    <div class="form-section">
+      <h2>📝 Enter Your Details</h2>
+      <label>Name</label>
+      <input type="text" placeholder="Your full name" />
+
+      <label>Email</label>
+      <input type="email" placeholder="you@example.com" />
+
+      <label>Phone</label>
+      <input type="text" placeholder="+91-XXXXXXXXXX" />
+
+      <label>Education</label>
+      <textarea placeholder="Your education details..."></textarea>
+
+      <label>Experience</label>
+      <textarea placeholder="Your work experience..."></textarea>
+
+      <label>Skills</label>
+      <input type="text" placeholder="E.g., Java, React, SQL" />
+
+      <label>Choose Template</label>
+      <select class="template-select">
+        <option>Classic</option>
+        <option>Modern</option>
+        <option>Creative</option>
+      </select>
+    </div>
+
+    <!-- Resume Preview -->
+    <div class="preview-section">
+      <h2>👀 Resume Preview</h2>
+      <div class="resume-preview">
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Email:</strong> john@example.com</p>
+        <p><strong>Phone:</strong> +91-9876543210</p>
+        <p><strong>Education:</strong> B.Tech CSE - XYZ University</p>
+        <p><strong>Experience:</strong> Intern at ABC Corp</p>
+        <p><strong>Skills:</strong> Java, Spring Boot, SQL</p>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="download-section">
+      <h2>⚙️ Actions</h2>
+      <div class="buttons">
+        <button>🎯 Generate PDF</button>
+        <button>📄 Download Word</button>
+        <button>🔄 Reset</button>
+        <button>✏️ Edit</button>
+      </div>
+    </div>
+
+    <!-- Feedback -->
+    <div class="feedback-section">
+      <h2>💬 Feedback</h2>
+      <label>Share your thoughts:</label>
+      <textarea placeholder="Let us know what you think!"></textarea>
+      <button>📩 Submit Feedback</button>
+    </div>
+
+    <div class="footer">
+      Made with ❤️ by Resume Builder Team
+    </div>
+  </div>
+</body>
+</html>
